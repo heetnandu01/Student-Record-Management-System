@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Student record Management System");
+        System.out.println("Student Record Management System");
         Scanner sc = new Scanner(System.in);
         studentDatabase db = new studentDatabase();
 
@@ -13,21 +13,19 @@ public class Main {
             System.out.println("3. Search Student");
             System.out.println("4. Update Student");
             System.out.println("5. Delete Student");
-            System.out.println("6. Exit");
+            System.out.println("6. Show Topper / Top 3 Students");
+            System.out.println("7. Show Class Statistics");
+            System.out.println("8. Exit");
 
             System.out.print("Enter the choice No: ");
             int choice = sc.nextInt();
-
-            if (choice == 6) {
-                System.out.println("Exiting....");
-                break;
-            }
+            sc.nextLine(); // consume newline
 
             switch (choice) {
                 case 1:
                     System.out.print("Enter roll number: ");
                     int roll = sc.nextInt();
-                    sc.nextLine(); 
+                    sc.nextLine();
 
                     System.out.print("Enter name: ");
                     String name = sc.nextLine();
@@ -51,7 +49,7 @@ public class Main {
                 case 4:
                     System.out.print("Enter roll to update: ");
                     int updateRoll = sc.nextInt();
-                    sc.nextLine(); 
+                    sc.nextLine();
 
                     System.out.print("Enter new name: ");
                     String newName = sc.nextLine();
@@ -69,13 +67,20 @@ public class Main {
                     break;
 
                 case 6:
+                    db.showTopper();
+                    break;
+
+                case 7:
+                    db.showStatistics();
+                    break;
+
+                case 8:
                     System.out.println("Exiting...");
                     return;
 
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
-
         }
     }
 }
