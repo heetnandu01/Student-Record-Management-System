@@ -1,4 +1,4 @@
-# 🎓 Student Record Management System
+# 🎓 StudentManager
 
 A console-based Java application to manage student records with CRUD operations.
 
