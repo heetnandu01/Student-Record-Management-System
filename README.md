@@ -1,48 +1,23 @@
-# 🧾 Student Record Management System
+🧾 Student Record Management System
 
-A simple console-based Java application to manage student records using basic CRUD operations.  
-This project demonstrates core Java concepts such as object-oriented programming, collections, and user input handling.
+A simple console-based Java application to manage student records with CRUD operations, automatic grade calculation, topper display, and class statistics, demonstrating core Java concepts such as object-oriented programming, collections, and user input handling.
 
----
+🚀 Features
 
-## 🚀 Features
+➕ Add new student records with automatic grade calculation
+📄 View all students with marks and grade
+🔍 Search student by roll number
+✏️ Update student name and marks
+❌ Delete a student from records
+🏆 Show topper and top 3 students
+📊 Show class statistics with a professional report
+🧭 Menu-driven CLI interface using Scanner
 
-- ➕ Add new student records  
-- 📄 View all students  
-- 🔍 Search student by roll number  
-- ✏️ Update student name and marks  
-- ❌ Delete a student from records  
-- 🧭 Menu-driven CLI interface using Scanner  
+🛠️ Built With
+<p align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40"/> <img src="https://img.icons8.com/ios/50/command-line.png" alt="Terminal" width="36"/> </p>
 
----
+Java, LinkedHashMap for data storage, Object-Oriented Programming principles, and Scanner for user input
 
-## 🛠️ Built With
+🧪 How to Run
 
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40"/>
-  <img src="https://img.icons8.com/ios/50/command-line.png" alt="Terminal" width="36"/>
-</p>
-
-- Java
-- LinkedHashMap for data storage
-- OOP principles (Encapsulation, Classes, Objects)
-- Scanner for user input
-
----
-
-## 🧪 How to Run
-
-1. Place all `.java` files in the same folder:
-   - `Student.java`
-   - `studentDatabase.java`
-   - `Main.java`
-
-2. Open a terminal in that folder.
-
-3. Compile all files:
-   ```bash
-   javac *.java
-4. Run the program:
-   ```bash
-   java Main.java
-   
+Place all .java files in the same folder: Student.java, studentDatabase.java, Main.java, open a terminal in that folder, compile all files with javac *.java, and run the program using java Main.
